@@ -14,7 +14,7 @@
 
      body { 
       background-color: white;
-      padding-bottom: 60px;
+      padding-bottom: 79px;
       color: White;
       font-family: 'sans-serif';
       overflow-x: hidden;
@@ -66,11 +66,7 @@
       animation: bounce 2s ease infinite 0.5s;
     }
 
-    .header-badge {
-      width: 20%;
-      height: auto;
-      margin: 4px;
-    }
+    
 
     @keyframes bounce {
 
@@ -98,7 +94,7 @@
 
     .top {
       margin-top: 90px;
-      font-size: 20px;
+      font-size: 17px;
     }
 
     .state {
@@ -207,14 +203,21 @@ align-items: flex-start;
       border-radius: 10px;
 
     }
+    .maps{
+      display: flex;
+      flex-direction: column;
+    }
 
     .mapie {
-      width: 300px;
+      width: 100%;
+      align-self: center;
       height: auto;
+      position: relative;
       border-radius: 10px;
     }
 
-    .maps {
+
+    .s {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -222,27 +225,58 @@ align-items: flex-start;
 
     }
 
-    .visit {
-      top: 70%;
+    @media (max-width: 768px) {
+     .visit {
       left: 60%;
+      top: 160%;
       position: absolute;
       padding: 15px;
+      
       border-radius: 5px;
       background-color: dodgerblue;
       opacity: 0.7;
       color: #000;
       font-weight: bold;
+    } 
     }
-
+@media (min-width: 768px) {
+  .visit {
+      left: 60%;
+      top: 250%;
+      position: absolute;
+      padding: 15px;
+      
+      border-radius: 5px;
+      background-color: dodgerblue;
+      opacity: 0.7;
+      color: #000;
+      font-weight: bold;
+    } 
+}
+  @media (max-width: 300px) {
+     .visit {
+      left: 60%;
+      top: 200%;
+      position: absolute;
+      padding: 15px;
+      
+      border-radius: 5px;
+      background-color: dodgerblue;
+      opacity: 0.7;
+      color: #000;
+      font-weight: bold;
+    } 
+     
+    }
 
     .talkies {
       background-color: ghostwhite;
       border-radius: 10px;
-      animation: slidein 1s ease      color: whitesmoke;
+      animation: slidein 1s ease      
 -out;
-
+color: whitesmoke;
       font-size: 19px;
-      line-height: 150%;
+      line-height: 120%;
     }
       @media (min-width: 768px) {
            .mapie {
@@ -257,13 +291,15 @@ align-items: flex-start;
       flex-direction: column;
       align-items: center;
     }
+      }
+   
 .header-badge{
         width: 10%;
         height: auto;
         margin: 0;
         }
         
-     
+    
           
         
         .pic{
@@ -276,11 +312,11 @@ align-items: flex-start;
 header{
           margin-top: 5%;
         }
-      }
-
+      
 
     .tk {
-      margin: 20px 10px;
+      margin-top: 20px ;
+      margin-bottom: 20px;
     }
 
     html {
@@ -321,6 +357,7 @@ header{
       text-align: center;
       line-height: 150%;
       font-size: 110%;
+      
     }
 
     .picture_section {
@@ -400,7 +437,7 @@ figcaption{
 <body>
   <!-- toppings section -->
   <section class="toppings" id="toppings">
-    <img src="toppings_badge.jpg" alt="badgie" class="header-badge" />
+    <img src="toppings_badge.jpg" alt="Css Rumuomasi School Badge" class="header-badge" />
     <div>Landing Page Of COMMUNITY SECONDARY SCHOOL RUMUOMASI by Sampson Praise</div>
   </section>
   <header>
@@ -410,7 +447,7 @@ figcaption{
       <div class="school">COMMUNITY SECONDARY SCHOOL,RUMUOMASI</div>
       <div>Located In Rivers State, Nigeria <br /> Courage For Excellence</div>
     </div>
-    <img src="toppings_badge.jpg" alt="head badge" class="head_badge" />
+    <img src="toppings_badge.jpg" alt="Css Rumuomasi School Badge" class="head_badge" />
 
   </header>
   <!-- navigation bar -->
@@ -436,11 +473,10 @@ figcaption{
       </div>
     </div>
   </section>
-  <div class="maps">
-    <img src="maps.jpg" alt="maps" class="mapie" />
-    <div class="visit"><a href="https://maps.app.goo.gl/ioLRQUzPJY4TnZS4A">Visit us</a></div>
+      <div class="maps">
+    <img src="maps.jpg" alt="Css Rumuomasi On google maps" class="mapie" />
   </div>
-
+<div class="visit"><a href="https://maps.app.goo.gl/ioLRQUzPJY4TnZS4A">Visit us</a></div>
   </div>
   <!-- about section -->
   <section class="text" id="about">
@@ -452,13 +488,13 @@ figcaption{
         <p>When we are not in our classrooms devotedly learning we're either hanging out in our social clubs or just
           chilling😎 with friends and this institution couldn't have been this successful without our dearly beloved
           Principal <u>
-            <span style="color: purple;">Mrs Owanete Inengim</u> </span> (middle)
+            <span style="color: purple;"><strong>Mrs Owanete Inengim</strong></u> </span> (middle)
         </p>
       </div>
     </div>
   </section>
   
-    <img src="principal.png" alt="principal" class="principal" />
+    <img src="principal.png" alt="Picture of the principal of css Rumuomasi Mrs Owanete Inengim" class="principal" />
      <figure>
 
     <br />
@@ -472,32 +508,32 @@ figcaption{
  
   </div>
         <div class="list">
-          <img src="ql.jpg" alt="stick man" class="badgie" />
+          <img src="ql.jpg" alt="stick man representing Quality learning" class="badgie" />
           <p class="offn">Quality Learning</p>
           A calm and focused environment where students grow in knowledge, practical skills, and strong moral values.
         </div>
         <hr />
         <div class="list">
-          <img src="qt.jpg" alt="stick man" class="badgie" />
+          <img src="qt.jpg" alt="stick man representing Qualified Teachers" class="badgie" />
           <p class="offn">
             Qualified Teachers</p>
           Our dedicated and God-fearing staff are committed to academic excellence and building strong character in
           every student.
         </div>
         <hr />
-        <div class="list"><img src="elf.jpg" alt="stick man" class="badgie" />
+        <div class="list"><img src="elf.jpg" alt="stick man representing Equipped Learning Facilities" class="badgie" />
           <p class="offn">Equipped Learning Facilities</p>
           We provide well-structured classrooms, science and computer labs, and a study hall to support effective,
           hands-on learning.
         </div>
         <hr />
-        <div class="list"><img src="vsl.jpg" alt="" class="badgie" />
+        <div class="list"><img src="vsl.jpg" alt="stick man representing Vibrant Student Life" class="badgie" />
           <p class="offn">Vibrant Student Life</p>
           We encourage growth beyond the classroom through clubs, cultural events, and interactive social activities
           that shape confident, well-rounded students.
         </div>
         <hr />
-        <div class="list"><img src="sar.jpg" alt="" class="badgie" />
+        <div class="list"><img src="sar.jpg" alt="stick man representing Sports & Recreation" class="badgie" />
           <p class="offn">
             Sports & Recreation</p>
           We promote physical fitness through fun and inclusive activities like soccer, athletics, and traditional games
@@ -511,38 +547,38 @@ figcaption{
   <div class="who"> Album 🖼️</div>
   <section id="album" class="picture_section">
 
-    <img src="toppings_badge.jpg" alt="pics" class="bg pic" />
+    <img src="toppings_badge.jpg" alt="Css Rumuomasi School Badge" class="bg pic" />
     <br>
     <figcaption>Our School`s Badge</figcaption>
-    <img src="P3.jpg" alt="pics" class="pic" />
+    <img src="P3.jpg" alt="Ambassadors for Safe Mobility Club Css Rumuomasi" class="pic" />
     <br>
     <figcaption>Ambassadors For Safe Mobility Club</figcaption>
-    <img src="T2.jpg" alt="pics" class="pic" />
+    <img src="T2.jpg" alt="Thankgod Godanswer at the Thanksgiving Service css Rumuomasi" class="pic" />
     <br>
     <figcaption>Thanksgiving Celebration Service</figcaption>
-    <img src="C2.jpg" alt="" class="pic" />
+    <img src="C2.jpg" alt="Delta Tribe Cultural Day Presentation at Css Rumuomasi" class="pic" />
     <br>
     <figcaption>Delta Tribe Cultural Day Presentation</figcaption>
 
-    <img src="T4.jpg" alt="pics" class="pic" />
+    <img src="T4.jpg" alt="Olivia at the Thanksgiving Service Css Rumuomasi" class="pic" />
     <br>
     <figcaption>Thanksgiving Celebration Service</figcaption>
-    <img src="P4.jpg" alt="pics" class="pic" />
+    <img src="P4.jpg" alt="Elizabeth at the Ambassadors for Safe Mobility Club Css Rumuomasi" class="pic" />
     <br>
     <figcaption>Ambassadors For Safe Mobility Club</figcaption>
-    <img src="C1.jpg" alt="pics" class="pic" />
+    <img src="C1.jpg" alt="Calabari Tribe Cultural Day Presentation at Css Rumuomasi" class="pic" />
     <br>
     <figcaption>Calabari Tribe Cultural Day Presentation</figcaption>
-    <img src="P2.jpg" alt="pics" class="pic" />
+    <img src="P2.jpg" alt="Sampson Praise on Ambassadors for Safe Mobility Club Css Rumuomasi" class="pic" />
     <br>
     <figcaption>Ambassadors For Safe Mobility Club</figcaption>
-    <img src="P1.jpg" alt="pics" class="pic" />
-    <br>
+    <img src="P1.jpg" alt="Sampson Praise on Ambassadors for Safe Mobility Club Css Rumuomasi" class="pic" />
+    <br>""''
     <figcaption>Ambassadors For Safe Mobility Club</figcaption>
-    <img src="T1.jpg" alt="pics" class="pic" />
+    <img src="T1.jpg" alt="Adaobi-Amadi on the Thanksgiving Service" class="pic" />
     <br>
     <figcaption>Mrs Adaobi-Amadi on the Thanksgiving Service</figcaption>
-    <img src="T3.jpg" alt="pics" class="pic bq" />
+    <img src="T3.jpg" alt="Our Esteemed Chior Performing on the Thanksgiving Service Css Rumuomasi" class="pic bq" />
     <br>
     <figcaption>Our Esteemed Chior Performing on the Thanksgiving Service</figcaption>
    
@@ -568,20 +604,20 @@ figcaption{
   <footer>
      <span class="con">Contact Us</span>
 <div class="contact">
-<a href="http://wa.me/+2349134660893"><img src="FB_IMG_17670129822414358.jpg" alt="" class="brand"/></a>
-<a href="https://www.facebook.com/profile.php?id=61584699981465"><img src="FB_IMG_17670130017614645.jpg" alt="" class="brand"/></a>
-<a href="mailto: sampsonp370@gmail.com"><img src="FB_IMG_17670149691562472.jpg" alt="" class="brand"/></a>
+<a href="http://wa.me/+2349134660893"><img src="FB_IMG_17670129822414358.jpg" alt="Sampson Praise on whatsapp" class="brand"/></a>
+<a href="https://www.facebook.com/profile.php?id=61584699981465"><img src="FB_IMG_17670130017614645.jpg" alt="Sampson Praise on facebook" class="brand"/></a>
+<a href="mailto: sampsonp370@gmail.com"><img src="FB_IMG_17670149691562472.jpg" alt="Sampson Praise on email" class="brand"/></a>
 </div>
 <div style="
 width: 60%;"><hr /></div>
 <span class="con">Follow Us</span>
 <div class="contact">
-  <a href="https://www.facebook.com/profile.php?id=61584663991770"><img src="FB_IMG_17670130017614645.jpg" alt="" class="brand"/></a>
+  <a href="https://www.facebook.com/profile.php?id=61584663991770"><img src="FB_IMG_17670130017614645.jpg" alt="Follow Sampson Praise on facebook" class="brand"/></a>
   <a href="https://www.tiktok.com/@praisesampson2011?_r=1&_d=em86j45b6mk42d&sec_uid=MS4wLjABAAAAv5M6hvaAtCwbnDd9BTmc39iEhFo1WcRTXfWqHnZXWxRVsQjXt0sBp78Kh1A06cg4&share_author_id=7547046300224275474&sharer_language=en&source=h5_m&u_code=em8j36bkei6302&utm_source=copy&utm_campaign=client_share&share_link_id=c69eed71-a979-4bcf-bb8c-d9b12fba4d24&share_app_id=1340&ugbiz_name=Account&lang=en&user_id=7547046300224275474&sec_user_id=MS4wLjABAAAAv5M6hvaAtCwbnDd9BTmc39iEhFo1WcRTXfWqHnZXWxRVsQjXt0sBp78Kh1A06cg4"><img src="FB_IMG_17670130268974556.jpg" alt="Sampson Praise on tiktok" class="brand"/></a>
   <a href="
 https://github.com/sensatech-1"><img src="FB_IMG_17670174508420721.jpg" alt="Sampson Praise on GitHub" class="brand"/></a>
 </div>
-   &copy;  <span class="css">2026 COMMUNITY SECONDARY SCHOOL RUMUOMASI</span>|WEBSITE BY PRAISE SAMPSON|GRAPHICS BY DAVID
+   &copy;  <span class="css">2026 <strong>COMMUNITY SECONDARY SCHOOL RUMUOMASI</strong></span>|WEBSITE BY PRAISE SAMPSON|GRAPHICS BY DAVID
     SAMPSON|ASST. GRAPHICS BY DAVE<span class="x">X </span>
     <div class="rights">ALL RIGHTS RESERVED</div>
   </footer>
